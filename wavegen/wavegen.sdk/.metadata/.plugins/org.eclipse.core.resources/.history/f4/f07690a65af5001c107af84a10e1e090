@@ -1,0 +1,14 @@
+#include "wavegen.h"
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "xil_io.h"
+
+int main () 
+{
+
+   print("---Entering main---\n\r");
+
+   WAVEGEN_mWriteReg (XPAR_WAVEGEN_0_S00_AXI_BASEADDR, 1, 10000);
+   print("---Exiting main---\n\r");
+   return 0;
+}
