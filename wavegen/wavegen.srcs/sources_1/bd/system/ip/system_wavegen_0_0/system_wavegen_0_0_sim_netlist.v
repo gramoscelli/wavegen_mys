@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
-// Date        : Sun Jun 26 10:53:00 2022
+// Date        : Sun Jun 26 11:30:08 2022
 // Host        : work running 64-bit Ubuntu 21.10
 // Command     : write_verilog -force -mode funcsim
-//               /home/gustavo/wavegen/wavegen.srcs/sources_1/bd/system/ip/system_wavegen_0_0/system_wavegen_0_0_sim_netlist.v
+//               /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ip/system_wavegen_0_0/system_wavegen_0_0_sim_netlist.v
 // Design      : system_wavegen_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.

@@ -2,12 +2,12 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Sun Jun 26 10:52:15 2022
-# Process ID: 735926
-# Current directory: /home/gustavo/wavegen/wavegen.runs/system_wavegen_0_0_synth_1
+# Start of session at: Sun Jun 26 11:29:23 2022
+# Process ID: 823216
+# Current directory: /home/gustavo/proyecto/wavegen/wavegen.runs/system_wavegen_0_0_synth_1
 # Command line: vivado -log system_wavegen_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wavegen_0_0.tcl
-# Log file: /home/gustavo/wavegen/wavegen.runs/system_wavegen_0_0_synth_1/system_wavegen_0_0.vds
-# Journal file: /home/gustavo/wavegen/wavegen.runs/system_wavegen_0_0_synth_1/vivado.jou
+# Log file: /home/gustavo/proyecto/wavegen/wavegen.runs/system_wavegen_0_0_synth_1/system_wavegen_0_0.vds
+# Journal file: /home/gustavo/proyecto/wavegen/wavegen.runs/system_wavegen_0_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source system_wavegen_0_0.tcl -notrace
 Command: synth_design -top system_wavegen_0_0 -part xc7z010clg400-1 -mode out_of_context
@@ -15,36 +15,36 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 735938 
+INFO: Helper process launched with PID 823283 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1269.430 ; gain = 87.000 ; free physical = 3943 ; free virtual = 13252
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1269.422 ; gain = 87.000 ; free physical = 3731 ; free virtual = 13185
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'system_wavegen_0_0' [/home/gustavo/wavegen/wavegen.srcs/sources_1/bd/system/ip/system_wavegen_0_0/synth/system_wavegen_0_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'system_wavegen_0_0' [/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ip/system_wavegen_0_0/synth/system_wavegen_0_0.vhd:84]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'wavegen_v1_0' declared at '/home/gustavo/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/34d0/hdl/wavegen_v1_0.vhd:5' bound to instance 'U0' of component 'wavegen_v1_0' [/home/gustavo/wavegen/wavegen.srcs/sources_1/bd/system/ip/system_wavegen_0_0/synth/system_wavegen_0_0.vhd:150]
-INFO: [Synth 8-638] synthesizing module 'wavegen_v1_0' [/home/gustavo/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/34d0/hdl/wavegen_v1_0.vhd:50]
+INFO: [Synth 8-3491] module 'wavegen_v1_0' declared at '/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/f181/hdl/wavegen_v1_0.vhd:5' bound to instance 'U0' of component 'wavegen_v1_0' [/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ip/system_wavegen_0_0/synth/system_wavegen_0_0.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'wavegen_v1_0' [/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/f181/hdl/wavegen_v1_0.vhd:50]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'wavegen_v1_0_S00_AXI' declared at '/home/gustavo/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/34d0/hdl/wavegen_v1_0_S00_AXI.vhd:5' bound to instance 'wavegen_v1_0_S00_AXI_inst' of component 'wavegen_v1_0_S00_AXI' [/home/gustavo/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/34d0/hdl/wavegen_v1_0.vhd:88]
-INFO: [Synth 8-638] synthesizing module 'wavegen_v1_0_S00_AXI' [/home/gustavo/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/34d0/hdl/wavegen_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-3491] module 'wavegen_v1_0_S00_AXI' declared at '/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/f181/hdl/wavegen_v1_0_S00_AXI.vhd:5' bound to instance 'wavegen_v1_0_S00_AXI_inst' of component 'wavegen_v1_0_S00_AXI' [/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/f181/hdl/wavegen_v1_0.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'wavegen_v1_0_S00_AXI' [/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/f181/hdl/wavegen_v1_0_S00_AXI.vhd:87]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-226] default block is never used [/home/gustavo/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/34d0/hdl/wavegen_v1_0_S00_AXI.vhd:239]
-INFO: [Synth 8-226] default block is never used [/home/gustavo/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/34d0/hdl/wavegen_v1_0_S00_AXI.vhd:369]
+INFO: [Synth 8-226] default block is never used [/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/f181/hdl/wavegen_v1_0_S00_AXI.vhd:239]
+INFO: [Synth 8-226] default block is never used [/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/f181/hdl/wavegen_v1_0_S00_AXI.vhd:369]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'wavegen_internal' declared at '/home/gustavo/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/34d0/src/wavegen_internal.vhd:8' bound to instance 'wavegen_int_inst' of component 'wavegen_internal' [/home/gustavo/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/34d0/hdl/wavegen_v1_0_S00_AXI.vhd:403]
-INFO: [Synth 8-638] synthesizing module 'wavegen_internal' [/home/gustavo/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/34d0/src/wavegen_internal.vhd:24]
+INFO: [Synth 8-3491] module 'wavegen_internal' declared at '/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/f181/src/wavegen_internal.vhd:8' bound to instance 'wavegen_int_inst' of component 'wavegen_internal' [/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/f181/hdl/wavegen_v1_0_S00_AXI.vhd:403]
+INFO: [Synth 8-638] synthesizing module 'wavegen_internal' [/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/f181/src/wavegen_internal.vhd:24]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'wavegen_internal' (1#1) [/home/gustavo/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/34d0/src/wavegen_internal.vhd:24]
-WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [/home/gustavo/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/34d0/hdl/wavegen_v1_0_S00_AXI.vhd:237]
-INFO: [Synth 8-256] done synthesizing module 'wavegen_v1_0_S00_AXI' (2#1) [/home/gustavo/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/34d0/hdl/wavegen_v1_0_S00_AXI.vhd:87]
-INFO: [Synth 8-256] done synthesizing module 'wavegen_v1_0' (3#1) [/home/gustavo/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/34d0/hdl/wavegen_v1_0.vhd:50]
-INFO: [Synth 8-256] done synthesizing module 'system_wavegen_0_0' (4#1) [/home/gustavo/wavegen/wavegen.srcs/sources_1/bd/system/ip/system_wavegen_0_0/synth/system_wavegen_0_0.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'wavegen_internal' (1#1) [/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/f181/src/wavegen_internal.vhd:24]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/f181/hdl/wavegen_v1_0_S00_AXI.vhd:237]
+INFO: [Synth 8-256] done synthesizing module 'wavegen_v1_0_S00_AXI' (2#1) [/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/f181/hdl/wavegen_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'wavegen_v1_0' (3#1) [/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ipshared/f181/hdl/wavegen_v1_0.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'system_wavegen_0_0' (4#1) [/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ip/system_wavegen_0_0/synth/system_wavegen_0_0.vhd:84]
 WARNING: [Synth 8-3331] design wavegen_internal has unconnected port slv_reg_wren
 WARNING: [Synth 8-3331] design wavegen_internal has unconnected port axi_awaddr[3]
 WARNING: [Synth 8-3331] design wavegen_internal has unconnected port axi_awaddr[2]
@@ -90,7 +90,7 @@ WARNING: [Synth 8-3331] design wavegen_v1_0_S00_AXI has unconnected port S_AXI_A
 WARNING: [Synth 8-3331] design wavegen_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design wavegen_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1313.039 ; gain = 130.609 ; free physical = 3954 ; free virtual = 13264
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1313.031 ; gain = 130.609 ; free physical = 3766 ; free virtual = 13220
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -103,10 +103,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1313.039 ; gain = 130.609 ; free physical = 3955 ; free virtual = 13265
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1313.031 ; gain = 130.609 ; free physical = 3767 ; free virtual = 13221
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1313.039 ; gain = 130.609 ; free physical = 3955 ; free virtual = 13265
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1313.031 ; gain = 130.609 ; free physical = 3767 ; free virtual = 13221
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -118,25 +118,25 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1648.684 ; gain = 0.000 ; free physical = 3717 ; free virtual = 13027
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1648.668 ; gain = 1.000 ; free physical = 3527 ; free virtual = 12981
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1648.684 ; gain = 466.254 ; free physical = 3782 ; free virtual = 13092
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1648.668 ; gain = 466.246 ; free physical = 3594 ; free virtual = 13048
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1648.684 ; gain = 466.254 ; free physical = 3782 ; free virtual = 13092
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1648.668 ; gain = 466.246 ; free physical = 3594 ; free virtual = 13048
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1648.684 ; gain = 466.254 ; free physical = 3784 ; free virtual = 13094
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1648.668 ; gain = 466.246 ; free physical = 3596 ; free virtual = 13050
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1648.684 ; gain = 466.254 ; free physical = 3776 ; free virtual = 13087
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 1648.668 ; gain = 466.246 ; free physical = 3588 ; free virtual = 13043
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -233,7 +233,7 @@ INFO: [Synth 8-3332] Sequential element (U0/wavegen_v1_0_S00_AXI_inst/axi_awaddr
 INFO: [Synth 8-3332] Sequential element (U0/wavegen_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module system_wavegen_0_0.
 INFO: [Synth 8-3332] Sequential element (U0/wavegen_v1_0_S00_AXI_inst/wavegen_int_inst/dac_out_reg[15]) is unused and will be removed from module system_wavegen_0_0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 1648.684 ; gain = 466.254 ; free physical = 3763 ; free virtual = 13075
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 1648.668 ; gain = 466.246 ; free physical = 3576 ; free virtual = 13032
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -245,13 +245,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.684 ; gain = 466.254 ; free physical = 3642 ; free virtual = 12954
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.668 ; gain = 466.246 ; free physical = 3457 ; free virtual = 12913
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.684 ; gain = 466.254 ; free physical = 3642 ; free virtual = 12954
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.668 ; gain = 466.246 ; free physical = 3457 ; free virtual = 12913
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -263,7 +263,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.684 ; gain = 466.254 ; free physical = 3639 ; free virtual = 12951
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.668 ; gain = 466.246 ; free physical = 3455 ; free virtual = 12911
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -287,7 +287,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.684 ; gain = 466.254 ; free physical = 3639 ; free virtual = 12951
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.668 ; gain = 466.246 ; free physical = 3455 ; free virtual = 12911
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -300,7 +300,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.684 ; gain = 466.254 ; free physical = 3639 ; free virtual = 12951
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.668 ; gain = 466.246 ; free physical = 3455 ; free virtual = 12911
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -312,25 +312,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.684 ; gain = 466.254 ; free physical = 3639 ; free virtual = 12951
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.668 ; gain = 466.246 ; free physical = 3455 ; free virtual = 12911
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.684 ; gain = 466.254 ; free physical = 3639 ; free virtual = 12951
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.668 ; gain = 466.246 ; free physical = 3455 ; free virtual = 12911
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.684 ; gain = 466.254 ; free physical = 3639 ; free virtual = 12951
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.668 ; gain = 466.246 ; free physical = 3455 ; free virtual = 12911
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.684 ; gain = 466.254 ; free physical = 3639 ; free virtual = 12951
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.668 ; gain = 466.246 ; free physical = 3455 ; free virtual = 12911
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -365,11 +365,11 @@ Report Instance Areas:
 |3     |    wavegen_v1_0_S00_AXI_inst |wavegen_v1_0_S00_AXI |   229|
 +------+------------------------------+---------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.684 ; gain = 466.254 ; free physical = 3639 ; free virtual = 12951
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.668 ; gain = 466.246 ; free physical = 3455 ; free virtual = 12911
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1648.684 ; gain = 130.609 ; free physical = 3697 ; free virtual = 13009
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.684 ; gain = 466.254 ; free physical = 3697 ; free virtual = 13009
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1648.668 ; gain = 130.609 ; free physical = 3513 ; free virtual = 12969
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1648.668 ; gain = 466.246 ; free physical = 3513 ; free virtual = 12969
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -379,11 +379,11 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 51 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 1648.684 ; gain = 485.711 ; free physical = 3687 ; free virtual = 12999
-INFO: [Common 17-1381] The checkpoint '/home/gustavo/wavegen/wavegen.runs/system_wavegen_0_0_synth_1/system_wavegen_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/gustavo/wavegen/wavegen.srcs/sources_1/bd/system/ip/system_wavegen_0_0/system_wavegen_0_0.xci
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 1648.668 ; gain = 485.703 ; free physical = 3504 ; free virtual = 12960
+INFO: [Common 17-1381] The checkpoint '/home/gustavo/proyecto/wavegen/wavegen.runs/system_wavegen_0_0_synth_1/system_wavegen_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ip/system_wavegen_0_0/system_wavegen_0_0.xci
 INFO: [Coretcl 2-1174] Renamed 2 cell refs.
-INFO: [Common 17-1381] The checkpoint '/home/gustavo/wavegen/wavegen.runs/system_wavegen_0_0_synth_1/system_wavegen_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/gustavo/proyecto/wavegen/wavegen.runs/system_wavegen_0_0_synth_1/system_wavegen_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_wavegen_0_0_utilization_synth.rpt -pb system_wavegen_0_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1672.695 ; gain = 0.000 ; free physical = 3691 ; free virtual = 13004
-INFO: [Common 17-206] Exiting Vivado at Sun Jun 26 10:53:00 2022...
+report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 1672.680 ; gain = 0.000 ; free physical = 3505 ; free virtual = 12962
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 26 11:30:08 2022...

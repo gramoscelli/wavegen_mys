@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/gustavo/wavegen/wavegen.runs/system_wavegen_0_0_synth_1'
+HD_PWD='/home/gustavo/proyecto/wavegen/wavegen.runs/system_wavegen_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

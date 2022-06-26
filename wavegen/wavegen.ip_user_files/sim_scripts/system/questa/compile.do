@@ -78,9 +78,9 @@ vcom -work proc_sys_reset_v5_0_12 -64 -93 \
 
 vcom -work xil_defaultlib -64 -93 \
 "../../../bd/system/ip/system_rst_ps7_0_100M_0/sim/system_rst_ps7_0_100M_0.vhd" \
-"../../../bd/system/ipshared/34d0/hdl/wavegen_v1_0_S00_AXI.vhd" \
-"../../../bd/system/ipshared/34d0/src/wavegen_internal.vhd" \
-"../../../bd/system/ipshared/34d0/hdl/wavegen_v1_0.vhd" \
+"../../../bd/system/ipshared/f181/hdl/wavegen_v1_0_S00_AXI.vhd" \
+"../../../bd/system/ipshared/f181/src/wavegen_internal.vhd" \
+"../../../bd/system/ipshared/f181/hdl/wavegen_v1_0.vhd" \
 "../../../bd/system/ip/system_wavegen_0_0/sim/system_wavegen_0_0.vhd" \
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../wavegen.srcs/sources_1/bd/system/ipshared/ec67/hdl" "+incdir+../../../../wavegen.srcs/sources_1/bd/system/ipshared/02c8/hdl/verilog" "+incdir+../../../../wavegen.srcs/sources_1/bd/system/ipshared/b193/hdl" "+incdir+../../../../wavegen.srcs/sources_1/bd/system/ipshared/6180/hdl/verilog" "+incdir+../../../../wavegen.srcs/sources_1/bd/system/ipshared/a08d/hdl/verilog" "+incdir+../../../../wavegen.srcs/sources_1/bd/system/ipshared/2875/hdl/verilog" "+incdir+../../../../wavegen.srcs/sources_1/bd/system/ipshared/2c14/hdl/verilog" "+incdir+/opt/Xilinx/Vivado/2018.1/data/xilinx_vip/include" "+incdir+../../../../wavegen.srcs/sources_1/bd/system/ipshared/ec67/hdl" "+incdir+../../../../wavegen.srcs/sources_1/bd/system/ipshared/02c8/hdl/verilog" "+incdir+../../../../wavegen.srcs/sources_1/bd/system/ipshared/b193/hdl" "+incdir+../../../../wavegen.srcs/sources_1/bd/system/ipshared/6180/hdl/verilog" "+incdir+../../../../wavegen.srcs/sources_1/bd/system/ipshared/a08d/hdl/verilog" "+incdir+../../../../wavegen.srcs/sources_1/bd/system/ipshared/2875/hdl/verilog" "+incdir+../../../../wavegen.srcs/sources_1/bd/system/ipshared/2c14/hdl/verilog" "+incdir+/opt/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \

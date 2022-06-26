@@ -1,6 +1,48 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
+| Date         : Sun Jun 26 11:29:16 2022
+| Host         : work running 64-bit Ubuntu 21.10
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_wavegen_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_wavegen_0_0 (user.org:user:wavegen:1.0 (Rev. 5)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
+| Date         : Sun Jun 26 11:28:52 2022
+| Host         : work running 64-bit Ubuntu 21.10
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_wavegen_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_wavegen_0_0 (user.org:user:wavegen:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
 | Date         : Sun Jun 26 10:51:52 2022
 | Host         : work running 64-bit Ubuntu 21.10
 | Command      : upgrade_ip

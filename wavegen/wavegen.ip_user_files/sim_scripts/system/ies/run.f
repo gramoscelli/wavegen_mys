@@ -43,9 +43,9 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/system/ip/system_rst_ps7_0_100M_0/sim/system_rst_ps7_0_100M_0.vhd" \
-  "../../../bd/system/ipshared/34d0/hdl/wavegen_v1_0_S00_AXI.vhd" \
-  "../../../bd/system/ipshared/34d0/src/wavegen_internal.vhd" \
-  "../../../bd/system/ipshared/34d0/hdl/wavegen_v1_0.vhd" \
+  "../../../bd/system/ipshared/f181/hdl/wavegen_v1_0_S00_AXI.vhd" \
+  "../../../bd/system/ipshared/f181/src/wavegen_internal.vhd" \
+  "../../../bd/system/ipshared/f181/hdl/wavegen_v1_0.vhd" \
   "../../../bd/system/ip/system_wavegen_0_0/sim/system_wavegen_0_0.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \

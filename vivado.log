@@ -1,0 +1,126 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Jun 26 11:27:26 2022
+# Process ID: 822488
+# Current directory: /home/gustavo/proyecto
+# Command line: vivado
+# Log file: /home/gustavo/proyecto/vivado.log
+# Journal file: /home/gustavo/proyecto/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/gustavo/proyecto/wavegen/wavegen.xpr
+INFO: [Project 1-313] Project file moved from '/home/gustavo/wavegen' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gustavo/proyecto/ip_resources'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 6199.414 ; gain = 128.914 ; free physical = 4315 ; free virtual = 13771
+update_compile_order -fileset sources_1
+open_bd_design {/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:ila:6.2 - ila_0
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+Adding cell -- user.org:user:wavegen:1.0 - wavegen_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /processing_system7_0/FCLK_CLK0(clk) and /wavegen_0/clk_i(undef)
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file </home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/system.bd>
+ipx::edit_ip_in_project -upgrade true -name wavegen_v1_0_project -directory /home/gustavo/proyecto/wavegen/wavegen.tmp/wavegen_v1_0_project /home/gustavo/proyecto/ip_resources/ip_repo/wavegen_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.1/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gustavo/proyecto/ip_resources'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+update_compile_order -fileset sources_1
+set_property core_revision 5 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/gustavo/proyecto/ip_resources
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/gustavo/proyecto/ip_resources'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:wavegen:1.0 [get_ips  system_wavegen_0_0] -log ip_upgrade.log
+Upgrading '/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/system.bd'
+INFO: [IP_Flow 19-3422] Upgraded system_wavegen_0_0 (wavegen_v1.0 1.0) from revision 4 to revision 5
+WARNING: [BD 41-1731] Type mismatch between connected pins: /processing_system7_0/FCLK_CLK0(clk) and /wavegen_0_upgraded_ipi/clk_i(undef)
+Wrote  : </home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/system.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/gustavo/proyecto/wavegen/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips system_wavegen_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/system.bd]
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+Wrote  : </home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/system.bd> 
+VHDL Output written to : /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block wavegen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/synth/system.hwdef
+catch { config_ip_cache -export [get_ips -all system_wavegen_0_0] }
+catch { config_ip_cache -export [get_ips -all system_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_0, cache-ID = dcfab0e0d5824485; cache size = 17.004 MB.
+export_ip_user_files -of_objects [get_files /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 16 system_wavegen_0_0_synth_1
+[Sun Jun 26 11:28:59 2022] Launched system_wavegen_0_0_synth_1...
+Run output will be captured here: /home/gustavo/proyecto/wavegen/wavegen.runs/system_wavegen_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/system.bd] -directory /home/gustavo/proyecto/wavegen/wavegen.ip_user_files/sim_scripts -ip_user_files_dir /home/gustavo/proyecto/wavegen/wavegen.ip_user_files -ipstatic_source_dir /home/gustavo/proyecto/wavegen/wavegen.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/gustavo/proyecto/wavegen/wavegen.cache/compile_simlib/modelsim} {questa=/home/gustavo/proyecto/wavegen/wavegen.cache/compile_simlib/questa} {ies=/home/gustavo/proyecto/wavegen/wavegen.cache/compile_simlib/ies} {xcelium=/home/gustavo/proyecto/wavegen/wavegen.cache/compile_simlib/xcelium} {vcs=/home/gustavo/proyecto/wavegen/wavegen.cache/compile_simlib/vcs} {riviera=/home/gustavo/proyecto/wavegen/wavegen.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/gustavo/proyecto/ip_resources'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv user.org:user:wavegen:1.0 [get_ips  system_wavegen_0_0] -log ip_upgrade.log
+Upgrading '/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/system.bd'
+INFO: [IP_Flow 19-1972] Upgraded system_wavegen_0_0 from wavegen_v1.0 1.0 to wavegen_v1.0 1.0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /processing_system7_0/FCLK_CLK0(clk) and /wavegen_0_upgraded_ipi/clk_i(undef)
+Wrote  : </home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/system.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/gustavo/proyecto/wavegen/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips system_wavegen_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/system.bd]
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+Wrote  : </home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/system.bd> 
+VHDL Output written to : /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block wavegen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/synth/system.hwdef
+catch { config_ip_cache -export [get_ips -all system_wavegen_0_0] }
+catch { config_ip_cache -export [get_ips -all system_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_0, cache-ID = dcfab0e0d5824485; cache size = 17.004 MB.
+export_ip_user_files -of_objects [get_files /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 16 system_wavegen_0_0_synth_1
+[Sun Jun 26 11:29:22 2022] Launched system_wavegen_0_0_synth_1...
+Run output will be captured here: /home/gustavo/proyecto/wavegen/wavegen.runs/system_wavegen_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files /home/gustavo/proyecto/wavegen/wavegen.srcs/sources_1/bd/system/system.bd] -directory /home/gustavo/proyecto/wavegen/wavegen.ip_user_files/sim_scripts -ip_user_files_dir /home/gustavo/proyecto/wavegen/wavegen.ip_user_files -ipstatic_source_dir /home/gustavo/proyecto/wavegen/wavegen.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/gustavo/proyecto/wavegen/wavegen.cache/compile_simlib/modelsim} {questa=/home/gustavo/proyecto/wavegen/wavegen.cache/compile_simlib/questa} {ies=/home/gustavo/proyecto/wavegen/wavegen.cache/compile_simlib/ies} {xcelium=/home/gustavo/proyecto/wavegen/wavegen.cache/compile_simlib/xcelium} {vcs=/home/gustavo/proyecto/wavegen/wavegen.cache/compile_simlib/vcs} {riviera=/home/gustavo/proyecto/wavegen/wavegen.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+[Sun Jun 26 11:31:03 2022] Launched synth_1...
+Run output will be captured here: /home/gustavo/proyecto/wavegen/wavegen.runs/synth_1/runme.log
+[Sun Jun 26 11:31:03 2022] Launched impl_1...
+Run output will be captured here: /home/gustavo/proyecto/wavegen/wavegen.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Sun Jun 26 11:33:42 2022] Launched impl_1...
+Run output will be captured here: /home/gustavo/proyecto/wavegen/wavegen.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 26 11:34:45 2022...

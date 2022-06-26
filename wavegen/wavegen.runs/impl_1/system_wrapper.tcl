@@ -66,7 +66,7 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   open_checkpoint system_wrapper_routed.dcp
-  set_property webtalk.parent_dir /home/gustavo/wavegen/wavegen.cache/wt [current_project]
+  set_property webtalk.parent_dir /home/gustavo/proyecto/wavegen/wavegen.cache/wt [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
   catch { write_mem_info -force system_wrapper.mmi }
   write_bitstream -force system_wrapper.bit 

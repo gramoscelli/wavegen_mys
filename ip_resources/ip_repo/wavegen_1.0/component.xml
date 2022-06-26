@@ -849,10 +849,10 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>wavegen_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>4</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2022-06-26T13:51:42Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>5</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2022-06-26T14:28:43Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
-        <xilinx:tag xilinx:name="user.org:user:wavegen:1.0_ARCHIVE_LOCATION">/home/gustavo/ip_resources/ip_repo/wavegen_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="user.org:user:wavegen:1.0_ARCHIVE_LOCATION">/home/gustavo/proyecto/ip_resources/ip_repo/wavegen_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
